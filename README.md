@@ -49,5 +49,3 @@ The `aws_lambda_event_source_mapping` resource had been removed from the infrast
 1. **The Fix:** Restored the `aws_lambda_event_source_mapping` block within `main.tf` to re-establish the pipeline path.
 2. **Deployment:** Executed `terraform apply` to push the corrected infrastructure state.
 3. **Validation:** Monitored the live logs to confirm the connection was restored. The Lambda function immediately triggered, successfully draining the backlog and processing the stuck payloads (e.g., "Order 103" and "Order 104").
-
-```
