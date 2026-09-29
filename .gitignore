@@ -1,0 +1,10 @@
+# Ignore local Terraform initialization files
+.terraform/
+.terraform.lock.hcl
+
+# Ignore local state files (Critical: never push state files to GitHub)
+*.tfstate
+*.tfstate.*
+
+# Ignore the generated Lambda deployment package
+*.zip
